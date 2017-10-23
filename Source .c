@@ -2,7 +2,6 @@
 #include<math.h>
 #include<string.h>
 #include <stdlib.h>
-#include<ctype.h>
 
 #define PI 3.141592653589793
 #define ARITHMETIC 0
@@ -20,7 +19,7 @@ int main(void) {
 	double n = 0, m, a;
 	int calmode = ARITHMETIC;
 	int inmode, outmode;
-	inmode = outmode = DEC;//‰Šú‚Í10i”
+	inmode = outmode = DEC;//åˆæœŸã¯10é€²æ•°
 	char sw[100];
 
 	printf("Function Mode\n");
@@ -39,7 +38,7 @@ int main(void) {
 		else if (!strcmp(sw, "\\out-2"))	{ outmode = BIN;	printf("Out-Bin\n");	continue; }
 		else if (!strcmp(sw, "\\out-10"))	{ outmode = DEC;	printf("Out-Dec\n");	continue; }
 		else if (!strcmp(sw, "\\out-16"))	{ outmode = HEX;	printf("Out-Hex\n");	continue; }
-		else if (!strcmp(sw, "\\help"))		{ printhelp();	continue; }	//Œ©‚â‚·‚³“I‚ÉŠÖ”‰»
+		else if (!strcmp(sw, "\\help"))		{ printhelp();	continue; }	//è¦‹ã‚„ã™ã•çš„ã«é–¢æ•°åŒ–
 
 
 		//if (InCheck(sw, &inmode) == -1) { printf("Re\n"); continue; }
