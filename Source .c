@@ -90,6 +90,7 @@ int main(void) {
 	return 0;
 }
 
+//この関数はつかわないよ（めんどくなった）
 int InCheck(const char *n, int *mode) {
 	int i;
 	int ret;
